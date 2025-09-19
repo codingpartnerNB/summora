@@ -4,6 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -25,6 +26,7 @@
   --color-input: var(--input);
   --color-border: var(--border);
   --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
   --color-accent-foreground: var(--accent-foreground);
   --color-accent: var(--accent);
   --color-muted-foreground: var(--muted-foreground);
@@ -44,30 +46,31 @@
 }
 
 :root {
-  --radius: 0.625rem;
+  --radius: 0.5rem;
   --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --foreground: oklch(0.1363 0.0364 259.2);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
+  --card-foreground: oklch(0.1363 0.0364 259.2);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
+  --popover-foreground: oklch(0.1363 0.0364 259.2);
+  --primary: oklch(0.6115 0.2242 19.9);
+  --primary-foreground: oklch(0.9812 0.0286 246.9);
+  --secondary: oklch(0.9513 0.0507 25.2);
+  --secondary-foreground: oklch(0.6115 0.2242 19.9);
+  --muted: oklch(0.9513 0.0507 25.2);
+  --muted-foreground: oklch(0.3224 0.0329 256.3);
+  --accent: oklch(0.2153 0.0219 25.2);
+  --accent-foreground: oklch(0.6115 0.2242 19.9);
+  --destructive: oklch(0.5113 0.2171 19.9);
+  --destructive-foreground: oklch(0.9812 0.0286 246.9);
+  --border: oklch(0.8821 0.0458 25.2);
+  --input: oklch(0.8821 0.0458 25.2);
+  --ring: oklch(0.6115 0.2242 19.9);
+  --chart-1: oklch(0.6573 0.1759 36.7);
+  --chart-2: oklch(0.5141 0.0954 188.5);
+  --chart-3: oklch(0.261 0.043 207.3);
+  --chart-4: oklch(0.704 0.183 72.1);
+  --chart-5: oklch(0.727 0.226 45.3);
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
   --sidebar-primary: oklch(0.205 0 0);
@@ -79,29 +82,30 @@
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
+  --background: oklch(0.136 0.036 259.2);
+  --foreground: oklch(0.981 0.029 246.9);
+  --card: oklch(0.136 0.036 259.2);
+  --card-foreground: oklch(0.981 0.029 246.9);
+  --popover: oklch(0.136 0.036 259.2);
+  --popover-foreground: oklch(0.981 0.029 246.9);
+  --primary: oklch(0.6115 0.2242 19.9);
+  --primary-foreground: oklch(0.981 0.029 246.9);
+  --secondary: oklch(0.210 0.021 25.2);
+  --secondary-foreground: oklch(0.981 0.029 246.9);
+  --muted: oklch(0.210 0.021 25.2);
+  --muted-foreground: oklch(0.693 0.045 249.6);
+  --accent: oklch(0.277 0.027 25.2);
+  --accent-foreground: oklch(0.981 0.029 246.9);
+  --destructive: oklch(0.411 0.192 19.9);
+  --destructive-foreground: oklch(0.981 0.029 246.9);
+  --border: oklch(0.210 0.021 25.2);
+  --input: oklch(0.210 0.021 25.2);
+  --ring: oklch(0.6115 0.2242 19.9);
+  --chart-1: oklch(0.502 0.120 262.0);
+  --chart-2: oklch(0.474 0.125 174.8);
+  --chart-3: oklch(0.615 0.174 58.4);
+  --chart-4: oklch(0.611 0.141 320.6);
+  --chart-5: oklch(0.569 0.168 13.2);
   --sidebar: oklch(0.205 0 0);
   --sidebar-foreground: oklch(0.985 0 0);
   --sidebar-primary: oklch(0.488 0.243 264.376);
@@ -114,9 +118,94 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border;
   }
-  body {
-    @apply bg-background text-foreground;
+  h1 {
+    @apply text-4xl md:text-6xl xl:text-7xl font-bold;
+  }
+  h2 {
+    @apply text-xl lg:text-3xl font-medium;
+  }
+  h3 {
+    @apply text-2xl lg:text-4xl font-medium;
+  }
+  a {
+    @apply hover:cursor-pointer;
+  }
+  button {
+    @apply hover:cursor-pointer bg-rose-600 hover:bg-rose-700;
+  }
+
+  ::selection {
+    background-color: #fff7db;
+  }
+
+  @keyframes gradient-x {
+    0%,
+    100% {
+      background-size: 200% 100%;
+      background-position: left center;
+    }
+    50% {
+      background-size: 200% 100%;
+      background-position: right center;
+    }
+  }
+
+  .animate-gradient-x {
+    animation: gradient-x 3s ease infinite;
+  }
+
+  @keyframes moveLR {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(4px);
+    }
+  }
+
+  .group:hover .arrow-animate {
+    animation: moveLR 1.5s ease-in-out infinite;
+  }
+
+  @keyframes pulse-slow {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.6; }
+  }
+  .animate-pulse-slow {
+    animation: pulse-slow 6s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  .animation-delay-500 {
+    animation-delay: 0.5s;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+  }
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animation-delay-1000 {
+    animation-delay: 1s;
+  }
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-3000 {
+    animation-delay: 3s;
+  }
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+  @media (width >= --theme(--breakpoint-sm)) {
+    max-width: none;
+  }
+  @media (width >= 1400px) {
+    max-width: 1400px;
   }
 }
