@@ -2,7 +2,7 @@
 
 Built with Next.js 15 App Router, Clerk for Auth, React, OpenAI GPT-4, Langchain, ShadCN UI components, Tailwind CSS, NeonDB, UploadThing, Stripe for payments, TypeScript, Framer Motion and more. 🧩🛠️💡
 
-<!-- ![Project Image]() -->
+![Project Image](https://summora-ai.vercel.app/opengraph-image.jpg)
 
 ## ⚡ Features
 
