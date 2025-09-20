@@ -16,6 +16,9 @@ const fontSans = Source_Sans_3({
 export const metadata: Metadata = {
   title: "Summora – Smart Summaries, Powered by AI",
   description: "Transform lengthy PDFs into clear, accurate summaries in seconds with advanced AI technology. Read less, know more — and get to the point, faster.",
+  icons: {
+    icon: '/icon.ico',
+  },
   openGraph: {
     images: [
       {
